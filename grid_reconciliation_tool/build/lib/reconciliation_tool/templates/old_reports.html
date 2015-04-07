@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block header %} 
+{{ super() }}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dropzone.css') }}"> 
+    
+{% endblock %}
+
+{% block content %}
+
+    
+
+    <div class="modal"><!-- Place at bottom of page --></div>
+{% endblock %}
+
+{% block footer %}
+{{ super() }}
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+{% endblock %}

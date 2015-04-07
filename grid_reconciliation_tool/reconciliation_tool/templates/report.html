@@ -1,0 +1,10 @@
+
+{% block content %}
+    {% if data is defined %}
+      <h2 class="sub-header">Generated Report</h2>
+      <div class="table-responsive">
+    {{ data.to_html(classes="table table-striped") | safe}}
+    </div>
+  {% endif %}
+    
+{% endblock %}
